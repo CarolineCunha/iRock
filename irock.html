@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+        <title>
+            iRock
+        </title>
+        <script type="text/javascript">
+            function touchRock() {
+                var userName = prompt("What is your name?", "Enter your name here.");
+                if (userName) {
+                    alert("Prazer em conhecer você " + userName + ".");
+                    document.getElementById("rockImg").src="rock2.png";
+                }
+            }
+        </script>
+    </head>
+    <body onload="alert(`Hello, eu sou a rocha de estimação.`);">
+        <img id="rockImg" src="rock.png" alt="iRock" style="cursor:pointer" onclick ='touchRock();'/> 
+    </body>
+</html>
